@@ -25,6 +25,7 @@ Deletes Unmanaged Key associated with the provided identifier
 import com.keyfactor.command.client.ApiClient;
 import com.keyfactor.command.client.ApiException;
 import com.keyfactor.command.client.Configuration;
+import com.keyfactor.command.client.auth.*;
 import com.keyfactor.command.client.models.*;
 import com.keyfactor.command.client.api.KeyApi;
 
@@ -32,6 +33,11 @@ public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://192.168.78.139/KeyfactorAPI");
+    
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("YOUR USERNAME");
+    basicAuth.setPassword("YOUR PASSWORD");
 
     KeyApi apiInstance = new KeyApi(defaultClient);
     Integer id = 56; // Integer | Keyfactor identifer of the Key to be deleted
@@ -64,7 +70,7 @@ null (empty response body)
 
 ### Authorization
 
-No authorization required
+[basicAuth](../README.md#basicAuth)
 
 ### HTTP request headers
 
@@ -88,6 +94,7 @@ Deletes Unmanaged Keys associated with the provided identifiers
 import com.keyfactor.command.client.ApiClient;
 import com.keyfactor.command.client.ApiException;
 import com.keyfactor.command.client.Configuration;
+import com.keyfactor.command.client.auth.*;
 import com.keyfactor.command.client.models.*;
 import com.keyfactor.command.client.api.KeyApi;
 
@@ -95,6 +102,11 @@ public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://192.168.78.139/KeyfactorAPI");
+    
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("YOUR USERNAME");
+    basicAuth.setPassword("YOUR PASSWORD");
 
     KeyApi apiInstance = new KeyApi(defaultClient);
     String xKeyfactorRequestedWith = "APIClient"; // String | Type of the request [XMLHttpRequest, APIClient]
@@ -127,7 +139,7 @@ null (empty response body)
 
 ### Authorization
 
-No authorization required
+[basicAuth](../README.md#basicAuth)
 
 ### HTTP request headers
 
@@ -153,6 +165,7 @@ Generates an SSH Key Pair for the requesting user.
 import com.keyfactor.command.client.ApiClient;
 import com.keyfactor.command.client.ApiException;
 import com.keyfactor.command.client.Configuration;
+import com.keyfactor.command.client.auth.*;
 import com.keyfactor.command.client.models.*;
 import com.keyfactor.command.client.api.KeyApi;
 
@@ -160,6 +173,11 @@ public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://192.168.78.139/KeyfactorAPI");
+    
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("YOUR USERNAME");
+    basicAuth.setPassword("YOUR PASSWORD");
 
     KeyApi apiInstance = new KeyApi(defaultClient);
     String xKeyfactorRequestedWith = "APIClient"; // String | Type of the request [XMLHttpRequest, APIClient]
@@ -193,7 +211,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[basicAuth](../README.md#basicAuth)
 
 ### HTTP request headers
 
@@ -217,6 +235,7 @@ Returns the current key of the requesting user
 import com.keyfactor.command.client.ApiClient;
 import com.keyfactor.command.client.ApiException;
 import com.keyfactor.command.client.Configuration;
+import com.keyfactor.command.client.auth.*;
 import com.keyfactor.command.client.models.*;
 import com.keyfactor.command.client.api.KeyApi;
 
@@ -224,6 +243,11 @@ public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://192.168.78.139/KeyfactorAPI");
+    
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("YOUR USERNAME");
+    basicAuth.setPassword("YOUR PASSWORD");
 
     KeyApi apiInstance = new KeyApi(defaultClient);
     String xKeyfactorRequestedWith = "APIClient"; // String | Type of the request [XMLHttpRequest, APIClient]
@@ -259,7 +283,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[basicAuth](../README.md#basicAuth)
 
 ### HTTP request headers
 
@@ -283,6 +307,7 @@ Returns an unmanaged SSH key with provided id.
 import com.keyfactor.command.client.ApiClient;
 import com.keyfactor.command.client.ApiException;
 import com.keyfactor.command.client.Configuration;
+import com.keyfactor.command.client.auth.*;
 import com.keyfactor.command.client.models.*;
 import com.keyfactor.command.client.api.KeyApi;
 
@@ -290,6 +315,11 @@ public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://192.168.78.139/KeyfactorAPI");
+    
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("YOUR USERNAME");
+    basicAuth.setPassword("YOUR PASSWORD");
 
     KeyApi apiInstance = new KeyApi(defaultClient);
     Integer id = 56; // Integer | The id of the key to get
@@ -323,7 +353,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[basicAuth](../README.md#basicAuth)
 
 ### HTTP request headers
 
@@ -347,6 +377,7 @@ Returns Unmanaged SSH keys
 import com.keyfactor.command.client.ApiClient;
 import com.keyfactor.command.client.ApiException;
 import com.keyfactor.command.client.Configuration;
+import com.keyfactor.command.client.auth.*;
 import com.keyfactor.command.client.models.*;
 import com.keyfactor.command.client.api.KeyApi;
 
@@ -354,6 +385,11 @@ public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://192.168.78.139/KeyfactorAPI");
+    
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("YOUR USERNAME");
+    basicAuth.setPassword("YOUR PASSWORD");
 
     KeyApi apiInstance = new KeyApi(defaultClient);
     String xKeyfactorRequestedWith = "APIClient"; // String | Type of the request [XMLHttpRequest, APIClient]
@@ -395,7 +431,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[basicAuth](../README.md#basicAuth)
 
 ### HTTP request headers
 
@@ -419,6 +455,7 @@ Updates the requesting user&#39;s SSH key
 import com.keyfactor.command.client.ApiClient;
 import com.keyfactor.command.client.ApiException;
 import com.keyfactor.command.client.Configuration;
+import com.keyfactor.command.client.auth.*;
 import com.keyfactor.command.client.models.*;
 import com.keyfactor.command.client.api.KeyApi;
 
@@ -426,6 +463,11 @@ public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://192.168.78.139/KeyfactorAPI");
+    
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("YOUR USERNAME");
+    basicAuth.setPassword("YOUR PASSWORD");
 
     KeyApi apiInstance = new KeyApi(defaultClient);
     String xKeyfactorRequestedWith = "APIClient"; // String | Type of the request [XMLHttpRequest, APIClient]
@@ -459,7 +501,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[basicAuth](../README.md#basicAuth)
 
 ### HTTP request headers
 

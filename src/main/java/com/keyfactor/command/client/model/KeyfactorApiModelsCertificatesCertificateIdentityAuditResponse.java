@@ -52,7 +52,7 @@ import com.keyfactor.command.client.JSON;
  * Represents an account with a list of permission granted to it on a given certificate by either a role or collection
  */
 @ApiModel(description = "Represents an account with a list of permission granted to it on a given certificate by either a role or collection")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-10-27T12:22:19.679-07:00[America/Phoenix]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-11-08T11:48:36.483-07:00[America/Phoenix]")
 public class KeyfactorApiModelsCertificatesCertificateIdentityAuditResponse {
   public static final String SERIALIZED_NAME_ID = "Id";
   @SerializedName(SERIALIZED_NAME_ID)

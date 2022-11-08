@@ -26,6 +26,7 @@ Deletes the specified instance.
 import com.keyfactor.command.client.ApiClient;
 import com.keyfactor.command.client.ApiException;
 import com.keyfactor.command.client.Configuration;
+import com.keyfactor.command.client.auth.*;
 import com.keyfactor.command.client.models.*;
 import com.keyfactor.command.client.api.WorkflowInstanceApi;
 
@@ -33,6 +34,11 @@ public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://192.168.78.139/KeyfactorAPI");
+    
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("YOUR USERNAME");
+    basicAuth.setPassword("YOUR PASSWORD");
 
     WorkflowInstanceApi apiInstance = new WorkflowInstanceApi(defaultClient);
     UUID instanceId = UUID.randomUUID(); // UUID | The Id of the instance to be deleted.
@@ -65,7 +71,7 @@ null (empty response body)
 
 ### Authorization
 
-No authorization required
+[basicAuth](../README.md#basicAuth)
 
 ### HTTP request headers
 
@@ -89,6 +95,7 @@ Get information relevant for knowing where an instance is in its workflow.
 import com.keyfactor.command.client.ApiClient;
 import com.keyfactor.command.client.ApiException;
 import com.keyfactor.command.client.Configuration;
+import com.keyfactor.command.client.auth.*;
 import com.keyfactor.command.client.models.*;
 import com.keyfactor.command.client.api.WorkflowInstanceApi;
 
@@ -96,6 +103,11 @@ public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://192.168.78.139/KeyfactorAPI");
+    
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("YOUR USERNAME");
+    basicAuth.setPassword("YOUR PASSWORD");
 
     WorkflowInstanceApi apiInstance = new WorkflowInstanceApi(defaultClient);
     UUID instanceId = UUID.randomUUID(); // UUID | The {System.Guid} identifying the instance.
@@ -129,7 +141,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[basicAuth](../README.md#basicAuth)
 
 ### HTTP request headers
 
@@ -153,6 +165,7 @@ Gets the workflow instances matching the query specifications.
 import com.keyfactor.command.client.ApiClient;
 import com.keyfactor.command.client.ApiException;
 import com.keyfactor.command.client.Configuration;
+import com.keyfactor.command.client.auth.*;
 import com.keyfactor.command.client.models.*;
 import com.keyfactor.command.client.api.WorkflowInstanceApi;
 
@@ -160,6 +173,11 @@ public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://192.168.78.139/KeyfactorAPI");
+    
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("YOUR USERNAME");
+    basicAuth.setPassword("YOUR PASSWORD");
 
     WorkflowInstanceApi apiInstance = new WorkflowInstanceApi(defaultClient);
     String xKeyfactorRequestedWith = "APIClient"; // String | Type of the request [XMLHttpRequest, APIClient]
@@ -201,7 +219,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[basicAuth](../README.md#basicAuth)
 
 ### HTTP request headers
 
@@ -225,6 +243,7 @@ Gets the workflow instances waiting on the user.
 import com.keyfactor.command.client.ApiClient;
 import com.keyfactor.command.client.ApiException;
 import com.keyfactor.command.client.Configuration;
+import com.keyfactor.command.client.auth.*;
 import com.keyfactor.command.client.models.*;
 import com.keyfactor.command.client.api.WorkflowInstanceApi;
 
@@ -232,6 +251,11 @@ public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://192.168.78.139/KeyfactorAPI");
+    
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("YOUR USERNAME");
+    basicAuth.setPassword("YOUR PASSWORD");
 
     WorkflowInstanceApi apiInstance = new WorkflowInstanceApi(defaultClient);
     String xKeyfactorRequestedWith = "APIClient"; // String | Type of the request [XMLHttpRequest, APIClient]
@@ -273,7 +297,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[basicAuth](../README.md#basicAuth)
 
 ### HTTP request headers
 
@@ -297,6 +321,7 @@ Gets the workflow instances started by the user.
 import com.keyfactor.command.client.ApiClient;
 import com.keyfactor.command.client.ApiException;
 import com.keyfactor.command.client.Configuration;
+import com.keyfactor.command.client.auth.*;
 import com.keyfactor.command.client.models.*;
 import com.keyfactor.command.client.api.WorkflowInstanceApi;
 
@@ -304,6 +329,11 @@ public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://192.168.78.139/KeyfactorAPI");
+    
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("YOUR USERNAME");
+    basicAuth.setPassword("YOUR PASSWORD");
 
     WorkflowInstanceApi apiInstance = new WorkflowInstanceApi(defaultClient);
     String xKeyfactorRequestedWith = "APIClient"; // String | Type of the request [XMLHttpRequest, APIClient]
@@ -345,7 +375,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[basicAuth](../README.md#basicAuth)
 
 ### HTTP request headers
 
@@ -369,6 +399,7 @@ Restarts a failed instance against the specified definition version or the publi
 import com.keyfactor.command.client.ApiClient;
 import com.keyfactor.command.client.ApiException;
 import com.keyfactor.command.client.Configuration;
+import com.keyfactor.command.client.auth.*;
 import com.keyfactor.command.client.models.*;
 import com.keyfactor.command.client.api.WorkflowInstanceApi;
 
@@ -376,6 +407,11 @@ public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://192.168.78.139/KeyfactorAPI");
+    
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("YOUR USERNAME");
+    basicAuth.setPassword("YOUR PASSWORD");
 
     WorkflowInstanceApi apiInstance = new WorkflowInstanceApi(defaultClient);
     UUID instanceId = UUID.randomUUID(); // UUID | The instance Id to restart.
@@ -410,7 +446,7 @@ null (empty response body)
 
 ### Authorization
 
-No authorization required
+[basicAuth](../README.md#basicAuth)
 
 ### HTTP request headers
 
@@ -434,6 +470,7 @@ Receives the given signal for the given instance.
 import com.keyfactor.command.client.ApiClient;
 import com.keyfactor.command.client.ApiException;
 import com.keyfactor.command.client.Configuration;
+import com.keyfactor.command.client.auth.*;
 import com.keyfactor.command.client.models.*;
 import com.keyfactor.command.client.api.WorkflowInstanceApi;
 
@@ -441,6 +478,11 @@ public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://192.168.78.139/KeyfactorAPI");
+    
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("YOUR USERNAME");
+    basicAuth.setPassword("YOUR PASSWORD");
 
     WorkflowInstanceApi apiInstance = new WorkflowInstanceApi(defaultClient);
     UUID instanceId = UUID.randomUUID(); // UUID | The instance that is receiving the signal.
@@ -475,7 +517,7 @@ null (empty response body)
 
 ### Authorization
 
-No authorization required
+[basicAuth](../README.md#basicAuth)
 
 ### HTTP request headers
 
@@ -499,6 +541,7 @@ Rejects an instance, preventing it from continuing.
 import com.keyfactor.command.client.ApiClient;
 import com.keyfactor.command.client.ApiException;
 import com.keyfactor.command.client.Configuration;
+import com.keyfactor.command.client.auth.*;
 import com.keyfactor.command.client.models.*;
 import com.keyfactor.command.client.api.WorkflowInstanceApi;
 
@@ -506,6 +549,11 @@ public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://192.168.78.139/KeyfactorAPI");
+    
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("YOUR USERNAME");
+    basicAuth.setPassword("YOUR PASSWORD");
 
     WorkflowInstanceApi apiInstance = new WorkflowInstanceApi(defaultClient);
     UUID instanceId = UUID.randomUUID(); // UUID | The Id of the instance to reject.
@@ -538,7 +586,7 @@ null (empty response body)
 
 ### Authorization
 
-No authorization required
+[basicAuth](../README.md#basicAuth)
 
 ### HTTP request headers
 

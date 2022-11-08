@@ -30,6 +30,7 @@ Configures a management job to add a certificate to one or more stores with the 
 import com.keyfactor.command.client.ApiClient;
 import com.keyfactor.command.client.ApiException;
 import com.keyfactor.command.client.Configuration;
+import com.keyfactor.command.client.auth.*;
 import com.keyfactor.command.client.models.*;
 import com.keyfactor.command.client.api.CertificateStoreApi;
 
@@ -37,6 +38,11 @@ public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://192.168.78.139/KeyfactorAPI");
+    
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("YOUR USERNAME");
+    basicAuth.setPassword("YOUR PASSWORD");
 
     CertificateStoreApi apiInstance = new CertificateStoreApi(defaultClient);
     String xKeyfactorRequestedWith = "APIClient"; // String | Type of the request [XMLHttpRequest, APIClient]
@@ -70,7 +76,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[basicAuth](../README.md#basicAuth)
 
 ### HTTP request headers
 
@@ -94,6 +100,7 @@ Approves the provided certificate stores to make them available for management
 import com.keyfactor.command.client.ApiClient;
 import com.keyfactor.command.client.ApiException;
 import com.keyfactor.command.client.Configuration;
+import com.keyfactor.command.client.auth.*;
 import com.keyfactor.command.client.models.*;
 import com.keyfactor.command.client.api.CertificateStoreApi;
 
@@ -101,6 +108,11 @@ public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://192.168.78.139/KeyfactorAPI");
+    
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("YOUR USERNAME");
+    basicAuth.setPassword("YOUR PASSWORD");
 
     CertificateStoreApi apiInstance = new CertificateStoreApi(defaultClient);
     String xKeyfactorRequestedWith = "APIClient"; // String | Type of the request [XMLHttpRequest, APIClient]
@@ -133,7 +145,7 @@ null (empty response body)
 
 ### Authorization
 
-No authorization required
+[basicAuth](../README.md#basicAuth)
 
 ### HTTP request headers
 
@@ -157,6 +169,7 @@ Configures a discovery job to locate currently unmanaged certificate stores
 import com.keyfactor.command.client.ApiClient;
 import com.keyfactor.command.client.ApiException;
 import com.keyfactor.command.client.Configuration;
+import com.keyfactor.command.client.auth.*;
 import com.keyfactor.command.client.models.*;
 import com.keyfactor.command.client.api.CertificateStoreApi;
 
@@ -164,6 +177,11 @@ public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://192.168.78.139/KeyfactorAPI");
+    
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("YOUR USERNAME");
+    basicAuth.setPassword("YOUR PASSWORD");
 
     CertificateStoreApi apiInstance = new CertificateStoreApi(defaultClient);
     String xKeyfactorRequestedWith = "APIClient"; // String | Type of the request [XMLHttpRequest, APIClient]
@@ -196,7 +214,7 @@ null (empty response body)
 
 ### Authorization
 
-No authorization required
+[basicAuth](../README.md#basicAuth)
 
 ### HTTP request headers
 
@@ -220,6 +238,7 @@ Creates a new certificate store server with the provided properties
 import com.keyfactor.command.client.ApiClient;
 import com.keyfactor.command.client.ApiException;
 import com.keyfactor.command.client.Configuration;
+import com.keyfactor.command.client.auth.*;
 import com.keyfactor.command.client.models.*;
 import com.keyfactor.command.client.api.CertificateStoreApi;
 
@@ -227,6 +246,11 @@ public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://192.168.78.139/KeyfactorAPI");
+    
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("YOUR USERNAME");
+    basicAuth.setPassword("YOUR PASSWORD");
 
     CertificateStoreApi apiInstance = new CertificateStoreApi(defaultClient);
     String xKeyfactorRequestedWith = "APIClient"; // String | Type of the request [XMLHttpRequest, APIClient]
@@ -260,7 +284,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[basicAuth](../README.md#basicAuth)
 
 ### HTTP request headers
 
@@ -284,6 +308,7 @@ Deletes a persisted certificate store by its Keyfactor identifier
 import com.keyfactor.command.client.ApiClient;
 import com.keyfactor.command.client.ApiException;
 import com.keyfactor.command.client.Configuration;
+import com.keyfactor.command.client.auth.*;
 import com.keyfactor.command.client.models.*;
 import com.keyfactor.command.client.api.CertificateStoreApi;
 
@@ -291,6 +316,11 @@ public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://192.168.78.139/KeyfactorAPI");
+    
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("YOUR USERNAME");
+    basicAuth.setPassword("YOUR PASSWORD");
 
     CertificateStoreApi apiInstance = new CertificateStoreApi(defaultClient);
     UUID id = UUID.randomUUID(); // UUID | Keyfactor certificate store identifier (GUID)
@@ -323,7 +353,7 @@ null (empty response body)
 
 ### Authorization
 
-No authorization required
+[basicAuth](../README.md#basicAuth)
 
 ### HTTP request headers
 
@@ -349,6 +379,7 @@ This will ignore individual delete failures, and continue processing the array.
 import com.keyfactor.command.client.ApiClient;
 import com.keyfactor.command.client.ApiException;
 import com.keyfactor.command.client.Configuration;
+import com.keyfactor.command.client.auth.*;
 import com.keyfactor.command.client.models.*;
 import com.keyfactor.command.client.api.CertificateStoreApi;
 
@@ -356,6 +387,11 @@ public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://192.168.78.139/KeyfactorAPI");
+    
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("YOUR USERNAME");
+    basicAuth.setPassword("YOUR PASSWORD");
 
     CertificateStoreApi apiInstance = new CertificateStoreApi(defaultClient);
     String xKeyfactorRequestedWith = "APIClient"; // String | Type of the request [XMLHttpRequest, APIClient]
@@ -388,7 +424,7 @@ null (empty response body)
 
 ### Authorization
 
-No authorization required
+[basicAuth](../README.md#basicAuth)
 
 ### HTTP request headers
 
@@ -412,6 +448,7 @@ Returns a single certificate store&#39;s inventory associated with the provided 
 import com.keyfactor.command.client.ApiClient;
 import com.keyfactor.command.client.ApiException;
 import com.keyfactor.command.client.Configuration;
+import com.keyfactor.command.client.auth.*;
 import com.keyfactor.command.client.models.*;
 import com.keyfactor.command.client.api.CertificateStoreApi;
 
@@ -419,6 +456,11 @@ public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://192.168.78.139/KeyfactorAPI");
+    
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("YOUR USERNAME");
+    basicAuth.setPassword("YOUR PASSWORD");
 
     CertificateStoreApi apiInstance = new CertificateStoreApi(defaultClient);
     UUID id = UUID.randomUUID(); // UUID | Keyfactor identifier (GUID) of the certificate store
@@ -460,7 +502,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[basicAuth](../README.md#basicAuth)
 
 ### HTTP request headers
 
@@ -484,6 +526,7 @@ Configures a management job to remove a certificate from one or more stores with
 import com.keyfactor.command.client.ApiClient;
 import com.keyfactor.command.client.ApiException;
 import com.keyfactor.command.client.Configuration;
+import com.keyfactor.command.client.auth.*;
 import com.keyfactor.command.client.models.*;
 import com.keyfactor.command.client.api.CertificateStoreApi;
 
@@ -491,6 +534,11 @@ public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://192.168.78.139/KeyfactorAPI");
+    
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("YOUR USERNAME");
+    basicAuth.setPassword("YOUR PASSWORD");
 
     CertificateStoreApi apiInstance = new CertificateStoreApi(defaultClient);
     String xKeyfactorRequestedWith = "APIClient"; // String | Type of the request [XMLHttpRequest, APIClient]
@@ -524,7 +572,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[basicAuth](../README.md#basicAuth)
 
 ### HTTP request headers
 
@@ -548,6 +596,7 @@ Creates an inventory schedule for the provided certificate stores
 import com.keyfactor.command.client.ApiClient;
 import com.keyfactor.command.client.ApiException;
 import com.keyfactor.command.client.Configuration;
+import com.keyfactor.command.client.auth.*;
 import com.keyfactor.command.client.models.*;
 import com.keyfactor.command.client.api.CertificateStoreApi;
 
@@ -555,6 +604,11 @@ public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://192.168.78.139/KeyfactorAPI");
+    
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("YOUR USERNAME");
+    basicAuth.setPassword("YOUR PASSWORD");
 
     CertificateStoreApi apiInstance = new CertificateStoreApi(defaultClient);
     String xKeyfactorRequestedWith = "APIClient"; // String | Type of the request [XMLHttpRequest, APIClient]
@@ -587,7 +641,7 @@ null (empty response body)
 
 ### Authorization
 
-No authorization required
+[basicAuth](../README.md#basicAuth)
 
 ### HTTP request headers
 
@@ -611,6 +665,7 @@ Schedules a certificate store for reenrollment
 import com.keyfactor.command.client.ApiClient;
 import com.keyfactor.command.client.ApiException;
 import com.keyfactor.command.client.Configuration;
+import com.keyfactor.command.client.auth.*;
 import com.keyfactor.command.client.models.*;
 import com.keyfactor.command.client.api.CertificateStoreApi;
 
@@ -618,6 +673,11 @@ public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://192.168.78.139/KeyfactorAPI");
+    
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("YOUR USERNAME");
+    basicAuth.setPassword("YOUR PASSWORD");
 
     CertificateStoreApi apiInstance = new CertificateStoreApi(defaultClient);
     String xKeyfactorRequestedWith = "APIClient"; // String | Type of the request [XMLHttpRequest, APIClient]
@@ -650,7 +710,7 @@ null (empty response body)
 
 ### Authorization
 
-No authorization required
+[basicAuth](../README.md#basicAuth)
 
 ### HTTP request headers
 
@@ -674,6 +734,7 @@ Sets a password for the requested certificate store
 import com.keyfactor.command.client.ApiClient;
 import com.keyfactor.command.client.ApiException;
 import com.keyfactor.command.client.Configuration;
+import com.keyfactor.command.client.auth.*;
 import com.keyfactor.command.client.models.*;
 import com.keyfactor.command.client.api.CertificateStoreApi;
 
@@ -681,6 +742,11 @@ public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://192.168.78.139/KeyfactorAPI");
+    
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("YOUR USERNAME");
+    basicAuth.setPassword("YOUR PASSWORD");
 
     CertificateStoreApi apiInstance = new CertificateStoreApi(defaultClient);
     String xKeyfactorRequestedWith = "APIClient"; // String | Type of the request [XMLHttpRequest, APIClient]
@@ -713,7 +779,7 @@ null (empty response body)
 
 ### Authorization
 
-No authorization required
+[basicAuth](../README.md#basicAuth)
 
 ### HTTP request headers
 
@@ -737,6 +803,7 @@ Updates a given certificate store server with the properties of the provided ins
 import com.keyfactor.command.client.ApiClient;
 import com.keyfactor.command.client.ApiException;
 import com.keyfactor.command.client.Configuration;
+import com.keyfactor.command.client.auth.*;
 import com.keyfactor.command.client.models.*;
 import com.keyfactor.command.client.api.CertificateStoreApi;
 
@@ -744,6 +811,11 @@ public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://192.168.78.139/KeyfactorAPI");
+    
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("YOUR USERNAME");
+    basicAuth.setPassword("YOUR PASSWORD");
 
     CertificateStoreApi apiInstance = new CertificateStoreApi(defaultClient);
     String xKeyfactorRequestedWith = "APIClient"; // String | Type of the request [XMLHttpRequest, APIClient]
@@ -777,7 +849,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[basicAuth](../README.md#basicAuth)
 
 ### HTTP request headers
 

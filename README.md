@@ -2,7 +2,7 @@
 
 Keyfactor-v1
 - API version: v1
-  - Build date: 2022-10-27T12:22:19.679-07:00[America/Phoenix]
+  - Build date: 2022-11-08T11:48:36.483-07:00[America/Phoenix]
 
 This reference serves to document REST-based methods to manage and integrate with Keyfactor. In addition, an embedded interface allows for the execution of calls against the current Keyfactor API instance.
 
@@ -83,6 +83,7 @@ Please follow the [installation](#installation) instruction and execute the foll
 import com.keyfactor.command.client.ApiClient;
 import com.keyfactor.command.client.ApiException;
 import com.keyfactor.command.client.Configuration;
+import com.keyfactor.command.client.auth.*;
 import com.keyfactor.command.client.models.*;
 import com.keyfactor.command.client.api.AgentApi;
 
@@ -90,6 +91,11 @@ public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://192.168.78.139/KeyfactorAPI");
+    
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("YOUR USERNAME");
+    basicAuth.setPassword("YOUR PASSWORD");
 
     AgentApi apiInstance = new AgentApi(defaultClient);
     String xKeyfactorRequestedWith = "APIClient"; // String | Type of the request [XMLHttpRequest, APIClient]
@@ -790,8 +796,11 @@ Class | Method | HTTP request | Description
 
 ## Documentation for Authorization
 
-All endpoints do not require authorization.
 Authentication schemes defined for the API:
+### basicAuth
+
+- **Type**: HTTP basic authentication
+
 
 ## Recommendation
 

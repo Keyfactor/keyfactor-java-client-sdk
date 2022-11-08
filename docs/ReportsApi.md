@@ -33,6 +33,7 @@ Creates a custom report
 import com.keyfactor.command.client.ApiClient;
 import com.keyfactor.command.client.ApiException;
 import com.keyfactor.command.client.Configuration;
+import com.keyfactor.command.client.auth.*;
 import com.keyfactor.command.client.models.*;
 import com.keyfactor.command.client.api.ReportsApi;
 
@@ -40,6 +41,11 @@ public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://192.168.78.139/KeyfactorAPI");
+    
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("YOUR USERNAME");
+    basicAuth.setPassword("YOUR PASSWORD");
 
     ReportsApi apiInstance = new ReportsApi(defaultClient);
     String xKeyfactorRequestedWith = "APIClient"; // String | Type of the request [XMLHttpRequest, APIClient]
@@ -73,7 +79,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[basicAuth](../README.md#basicAuth)
 
 ### HTTP request headers
 
@@ -97,6 +103,7 @@ Create a built-in report&#39;s schedule that matches the id of the report.
 import com.keyfactor.command.client.ApiClient;
 import com.keyfactor.command.client.ApiException;
 import com.keyfactor.command.client.Configuration;
+import com.keyfactor.command.client.auth.*;
 import com.keyfactor.command.client.models.*;
 import com.keyfactor.command.client.api.ReportsApi;
 
@@ -104,6 +111,11 @@ public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://192.168.78.139/KeyfactorAPI");
+    
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("YOUR USERNAME");
+    basicAuth.setPassword("YOUR PASSWORD");
 
     ReportsApi apiInstance = new ReportsApi(defaultClient);
     Integer id = 56; // Integer | Report identifier
@@ -139,7 +151,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[basicAuth](../README.md#basicAuth)
 
 ### HTTP request headers
 
@@ -163,6 +175,7 @@ Delete custom report that matches the id
 import com.keyfactor.command.client.ApiClient;
 import com.keyfactor.command.client.ApiException;
 import com.keyfactor.command.client.Configuration;
+import com.keyfactor.command.client.auth.*;
 import com.keyfactor.command.client.models.*;
 import com.keyfactor.command.client.api.ReportsApi;
 
@@ -170,6 +183,11 @@ public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://192.168.78.139/KeyfactorAPI");
+    
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("YOUR USERNAME");
+    basicAuth.setPassword("YOUR PASSWORD");
 
     ReportsApi apiInstance = new ReportsApi(defaultClient);
     Integer id = 56; // Integer | Report identifier
@@ -202,7 +220,7 @@ null (empty response body)
 
 ### Authorization
 
-No authorization required
+[basicAuth](../README.md#basicAuth)
 
 ### HTTP request headers
 
@@ -226,6 +244,7 @@ Delete a built-in report&#39;s schedule that matches the id of the schedule.
 import com.keyfactor.command.client.ApiClient;
 import com.keyfactor.command.client.ApiException;
 import com.keyfactor.command.client.Configuration;
+import com.keyfactor.command.client.auth.*;
 import com.keyfactor.command.client.models.*;
 import com.keyfactor.command.client.api.ReportsApi;
 
@@ -233,6 +252,11 @@ public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://192.168.78.139/KeyfactorAPI");
+    
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("YOUR USERNAME");
+    basicAuth.setPassword("YOUR PASSWORD");
 
     ReportsApi apiInstance = new ReportsApi(defaultClient);
     Integer id = 56; // Integer | Report Schedule identifier
@@ -265,7 +289,7 @@ null (empty response body)
 
 ### Authorization
 
-No authorization required
+[basicAuth](../README.md#basicAuth)
 
 ### HTTP request headers
 
@@ -289,6 +313,7 @@ Returns a single custom report that matches the id
 import com.keyfactor.command.client.ApiClient;
 import com.keyfactor.command.client.ApiException;
 import com.keyfactor.command.client.Configuration;
+import com.keyfactor.command.client.auth.*;
 import com.keyfactor.command.client.models.*;
 import com.keyfactor.command.client.api.ReportsApi;
 
@@ -296,6 +321,11 @@ public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://192.168.78.139/KeyfactorAPI");
+    
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("YOUR USERNAME");
+    basicAuth.setPassword("YOUR PASSWORD");
 
     ReportsApi apiInstance = new ReportsApi(defaultClient);
     Integer id = 56; // Integer | Report identifier
@@ -329,7 +359,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[basicAuth](../README.md#basicAuth)
 
 ### HTTP request headers
 
@@ -353,6 +383,7 @@ Returns a single built-in report that matches the id
 import com.keyfactor.command.client.ApiClient;
 import com.keyfactor.command.client.ApiException;
 import com.keyfactor.command.client.Configuration;
+import com.keyfactor.command.client.auth.*;
 import com.keyfactor.command.client.models.*;
 import com.keyfactor.command.client.api.ReportsApi;
 
@@ -360,6 +391,11 @@ public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://192.168.78.139/KeyfactorAPI");
+    
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("YOUR USERNAME");
+    basicAuth.setPassword("YOUR PASSWORD");
 
     ReportsApi apiInstance = new ReportsApi(defaultClient);
     Integer id = 56; // Integer | Report identifier
@@ -393,7 +429,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[basicAuth](../README.md#basicAuth)
 
 ### HTTP request headers
 
@@ -417,6 +453,7 @@ Get a built-in report&#39;s parameters that matches the id of the report.
 import com.keyfactor.command.client.ApiClient;
 import com.keyfactor.command.client.ApiException;
 import com.keyfactor.command.client.Configuration;
+import com.keyfactor.command.client.auth.*;
 import com.keyfactor.command.client.models.*;
 import com.keyfactor.command.client.api.ReportsApi;
 
@@ -424,6 +461,11 @@ public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://192.168.78.139/KeyfactorAPI");
+    
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("YOUR USERNAME");
+    basicAuth.setPassword("YOUR PASSWORD");
 
     ReportsApi apiInstance = new ReportsApi(defaultClient);
     Integer id = 56; // Integer | Report identifier
@@ -457,7 +499,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[basicAuth](../README.md#basicAuth)
 
 ### HTTP request headers
 
@@ -481,6 +523,7 @@ Get a built-in report&#39;s schedule that matches the id of the schedule.
 import com.keyfactor.command.client.ApiClient;
 import com.keyfactor.command.client.ApiException;
 import com.keyfactor.command.client.Configuration;
+import com.keyfactor.command.client.auth.*;
 import com.keyfactor.command.client.models.*;
 import com.keyfactor.command.client.api.ReportsApi;
 
@@ -488,6 +531,11 @@ public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://192.168.78.139/KeyfactorAPI");
+    
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("YOUR USERNAME");
+    basicAuth.setPassword("YOUR PASSWORD");
 
     ReportsApi apiInstance = new ReportsApi(defaultClient);
     Integer id = 56; // Integer | Report Schedule identifier
@@ -521,7 +569,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[basicAuth](../README.md#basicAuth)
 
 ### HTTP request headers
 
@@ -545,6 +593,7 @@ Get a built-in report&#39;s schedules that matches the id of the report.
 import com.keyfactor.command.client.ApiClient;
 import com.keyfactor.command.client.ApiException;
 import com.keyfactor.command.client.Configuration;
+import com.keyfactor.command.client.auth.*;
 import com.keyfactor.command.client.models.*;
 import com.keyfactor.command.client.api.ReportsApi;
 
@@ -552,6 +601,11 @@ public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://192.168.78.139/KeyfactorAPI");
+    
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("YOUR USERNAME");
+    basicAuth.setPassword("YOUR PASSWORD");
 
     ReportsApi apiInstance = new ReportsApi(defaultClient);
     Integer id = 56; // Integer | Report identifier
@@ -595,7 +649,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[basicAuth](../README.md#basicAuth)
 
 ### HTTP request headers
 
@@ -619,6 +673,7 @@ Returns all custom reports according to the provided filter and output parameter
 import com.keyfactor.command.client.ApiClient;
 import com.keyfactor.command.client.ApiException;
 import com.keyfactor.command.client.Configuration;
+import com.keyfactor.command.client.auth.*;
 import com.keyfactor.command.client.models.*;
 import com.keyfactor.command.client.api.ReportsApi;
 
@@ -626,6 +681,11 @@ public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://192.168.78.139/KeyfactorAPI");
+    
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("YOUR USERNAME");
+    basicAuth.setPassword("YOUR PASSWORD");
 
     ReportsApi apiInstance = new ReportsApi(defaultClient);
     String xKeyfactorRequestedWith = "APIClient"; // String | Type of the request [XMLHttpRequest, APIClient]
@@ -667,7 +727,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[basicAuth](../README.md#basicAuth)
 
 ### HTTP request headers
 
@@ -691,6 +751,7 @@ Returns all built-in reports according to the provided filter and output paramet
 import com.keyfactor.command.client.ApiClient;
 import com.keyfactor.command.client.ApiException;
 import com.keyfactor.command.client.Configuration;
+import com.keyfactor.command.client.auth.*;
 import com.keyfactor.command.client.models.*;
 import com.keyfactor.command.client.api.ReportsApi;
 
@@ -698,6 +759,11 @@ public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://192.168.78.139/KeyfactorAPI");
+    
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("YOUR USERNAME");
+    basicAuth.setPassword("YOUR PASSWORD");
 
     ReportsApi apiInstance = new ReportsApi(defaultClient);
     String xKeyfactorRequestedWith = "APIClient"; // String | Type of the request [XMLHttpRequest, APIClient]
@@ -739,7 +805,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[basicAuth](../README.md#basicAuth)
 
 ### HTTP request headers
 
@@ -763,6 +829,7 @@ Updates a custom report that matches the id
 import com.keyfactor.command.client.ApiClient;
 import com.keyfactor.command.client.ApiException;
 import com.keyfactor.command.client.Configuration;
+import com.keyfactor.command.client.auth.*;
 import com.keyfactor.command.client.models.*;
 import com.keyfactor.command.client.api.ReportsApi;
 
@@ -770,6 +837,11 @@ public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://192.168.78.139/KeyfactorAPI");
+    
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("YOUR USERNAME");
+    basicAuth.setPassword("YOUR PASSWORD");
 
     ReportsApi apiInstance = new ReportsApi(defaultClient);
     String xKeyfactorRequestedWith = "APIClient"; // String | Type of the request [XMLHttpRequest, APIClient]
@@ -803,7 +875,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[basicAuth](../README.md#basicAuth)
 
 ### HTTP request headers
 
@@ -827,6 +899,7 @@ Updates a single built-in report that matches the id. Only some fields can be up
 import com.keyfactor.command.client.ApiClient;
 import com.keyfactor.command.client.ApiException;
 import com.keyfactor.command.client.Configuration;
+import com.keyfactor.command.client.auth.*;
 import com.keyfactor.command.client.models.*;
 import com.keyfactor.command.client.api.ReportsApi;
 
@@ -834,6 +907,11 @@ public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://192.168.78.139/KeyfactorAPI");
+    
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("YOUR USERNAME");
+    basicAuth.setPassword("YOUR PASSWORD");
 
     ReportsApi apiInstance = new ReportsApi(defaultClient);
     String xKeyfactorRequestedWith = "APIClient"; // String | Type of the request [XMLHttpRequest, APIClient]
@@ -867,7 +945,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[basicAuth](../README.md#basicAuth)
 
 ### HTTP request headers
 
@@ -891,6 +969,7 @@ Update a built-in report&#39;s parameters that matches the id of the report.
 import com.keyfactor.command.client.ApiClient;
 import com.keyfactor.command.client.ApiException;
 import com.keyfactor.command.client.Configuration;
+import com.keyfactor.command.client.auth.*;
 import com.keyfactor.command.client.models.*;
 import com.keyfactor.command.client.api.ReportsApi;
 
@@ -898,6 +977,11 @@ public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://192.168.78.139/KeyfactorAPI");
+    
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("YOUR USERNAME");
+    basicAuth.setPassword("YOUR PASSWORD");
 
     ReportsApi apiInstance = new ReportsApi(defaultClient);
     Integer id = 56; // Integer | Report identifier
@@ -933,7 +1017,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[basicAuth](../README.md#basicAuth)
 
 ### HTTP request headers
 
@@ -957,6 +1041,7 @@ Update a built-in report&#39;s schedule that matches the id of the report.
 import com.keyfactor.command.client.ApiClient;
 import com.keyfactor.command.client.ApiException;
 import com.keyfactor.command.client.Configuration;
+import com.keyfactor.command.client.auth.*;
 import com.keyfactor.command.client.models.*;
 import com.keyfactor.command.client.api.ReportsApi;
 
@@ -964,6 +1049,11 @@ public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://192.168.78.139/KeyfactorAPI");
+    
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("YOUR USERNAME");
+    basicAuth.setPassword("YOUR PASSWORD");
 
     ReportsApi apiInstance = new ReportsApi(defaultClient);
     Integer id = 56; // Integer | Report identifier
@@ -999,7 +1089,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[basicAuth](../README.md#basicAuth)
 
 ### HTTP request headers
 

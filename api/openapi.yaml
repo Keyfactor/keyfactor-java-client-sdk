@@ -7,6 +7,8 @@ info:
   version: v1
 servers:
 - url: https://192.168.78.139/KeyfactorAPI
+security:
+- basicAuth: []
 paths:
   /Agents/{id}:
     get:
@@ -19850,10 +19852,9 @@ components:
           type: string
         AllowedEnrollmentTypes:
           enum:
-          - 0
           - 1
           - 2
-          - 4
+          - 3
           format: int32
           type: integer
         KeyRetention:
@@ -29636,4 +29637,8 @@ components:
           description: Arbitrary data to associate with the signal.
           type: object
       type: object
+  securitySchemes:
+    basicAuth:
+      scheme: basic
+      type: http
 

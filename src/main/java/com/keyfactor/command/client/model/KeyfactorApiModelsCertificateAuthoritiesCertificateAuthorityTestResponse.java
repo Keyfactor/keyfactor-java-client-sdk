@@ -49,7 +49,7 @@ import com.keyfactor.command.client.JSON;
  * A DTO for CA tests.
  */
 @ApiModel(description = "A DTO for CA tests.")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-10-27T12:22:19.679-07:00[America/Phoenix]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-11-08T11:48:36.483-07:00[America/Phoenix]")
 public class KeyfactorApiModelsCertificateAuthoritiesCertificateAuthorityTestResponse {
   public static final String SERIALIZED_NAME_SUCCESS = "Success";
   @SerializedName(SERIALIZED_NAME_SUCCESS)

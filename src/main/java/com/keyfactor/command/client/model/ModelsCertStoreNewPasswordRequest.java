@@ -50,7 +50,7 @@ import com.keyfactor.command.client.JSON;
  * NewPassword must be provided and be of type string or KeyfactorAPISecret.
  */
 @ApiModel(description = "NewPassword must be provided and be of type string or KeyfactorAPISecret.")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-10-27T12:22:19.679-07:00[America/Phoenix]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-11-08T11:48:36.483-07:00[America/Phoenix]")
 public class ModelsCertStoreNewPasswordRequest {
   public static final String SERIALIZED_NAME_CERT_STORE_ID = "CertStoreId";
   @SerializedName(SERIALIZED_NAME_CERT_STORE_ID)

@@ -54,7 +54,7 @@ import com.keyfactor.command.client.JSON;
 /**
  * ModelsCertificateAuthoritiesCertificateAuthorityResponse
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-10-27T12:22:19.679-07:00[America/Phoenix]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-11-08T11:48:36.483-07:00[America/Phoenix]")
 public class ModelsCertificateAuthoritiesCertificateAuthorityResponse {
   public static final String SERIALIZED_NAME_ID = "Id";
   @SerializedName(SERIALIZED_NAME_ID)
@@ -129,13 +129,11 @@ public class ModelsCertificateAuthoritiesCertificateAuthorityResponse {
    */
   @JsonAdapter(AllowedEnrollmentTypesEnum.Adapter.class)
   public enum AllowedEnrollmentTypesEnum {
-    NUMBER_0(0),
-    
     NUMBER_1(1),
     
     NUMBER_2(2),
     
-    NUMBER_4(4);
+    NUMBER_3(3);
 
     private Integer value;
 

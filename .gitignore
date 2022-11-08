@@ -25,3 +25,5 @@ openapi-generator-cli.jar
 bruh
 test
 Keyfactor-v10-patched.swagger.yaml
+.openapi-generator
+.openapi-generator-ignore
