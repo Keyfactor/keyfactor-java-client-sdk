@@ -2,7 +2,6 @@
 
 Keyfactor-v1
 - API version: v1
-  - Build date: 2022-11-08T11:48:36.483-07:00[America/Phoenix]
 
 This reference serves to document REST-based methods to manage and integrate with Keyfactor. In addition, an embedded interface allows for the execution of calls against the current Keyfactor API instance.
 

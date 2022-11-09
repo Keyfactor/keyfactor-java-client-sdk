@@ -50,7 +50,7 @@ import com.keyfactor.command.client.JSON;
 /**
  * KeyfactorApiModelsEnrollmentManagementStoreTypeRequest
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-11-08T11:48:36.483-07:00[America/Phoenix]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class KeyfactorApiModelsEnrollmentManagementStoreTypeRequest {
   public static final String SERIALIZED_NAME_STORE_TYPE_ID = "StoreTypeId";
   @SerializedName(SERIALIZED_NAME_STORE_TYPE_ID)

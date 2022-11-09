@@ -2776,6 +2776,15 @@ paths:
           default: "1"
           type: string
         style: simple
+      - description: "Desired format [PFX, PEM]"
+        explode: false
+        in: header
+        name: x-certificateformat
+        required: true
+        schema:
+          default: PEM
+          type: string
+        style: simple
       - description: "Type of the request [XMLHttpRequest, APIClient]"
         explode: false
         in: header

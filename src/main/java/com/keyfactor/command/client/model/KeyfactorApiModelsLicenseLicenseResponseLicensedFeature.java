@@ -49,7 +49,7 @@ import com.keyfactor.command.client.JSON;
 /**
  * KeyfactorApiModelsLicenseLicenseResponseLicensedFeature
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-11-08T11:48:36.483-07:00[America/Phoenix]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class KeyfactorApiModelsLicenseLicenseResponseLicensedFeature {
   public static final String SERIALIZED_NAME_FEATURE_I_D = "FeatureID";
   @SerializedName(SERIALIZED_NAME_FEATURE_I_D)

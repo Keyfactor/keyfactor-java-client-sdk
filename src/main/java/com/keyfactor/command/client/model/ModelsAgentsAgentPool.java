@@ -53,7 +53,7 @@ import com.keyfactor.command.client.JSON;
  * Class representing an SSL agent pool
  */
 @ApiModel(description = "Class representing an SSL agent pool")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-11-08T11:48:36.483-07:00[America/Phoenix]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class ModelsAgentsAgentPool {
   public static final String SERIALIZED_NAME_AGENT_POOL_ID = "AgentPoolId";
   @SerializedName(SERIALIZED_NAME_AGENT_POOL_ID)

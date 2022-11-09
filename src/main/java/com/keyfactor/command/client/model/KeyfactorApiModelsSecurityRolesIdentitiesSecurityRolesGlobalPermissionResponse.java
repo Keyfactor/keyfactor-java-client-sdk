@@ -48,7 +48,7 @@ import com.keyfactor.command.client.JSON;
 /**
  * KeyfactorApiModelsSecurityRolesIdentitiesSecurityRolesGlobalPermissionResponse
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-11-08T11:48:36.483-07:00[America/Phoenix]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class KeyfactorApiModelsSecurityRolesIdentitiesSecurityRolesGlobalPermissionResponse {
   public static final String SERIALIZED_NAME_AREA = "Area";
   @SerializedName(SERIALIZED_NAME_AREA)

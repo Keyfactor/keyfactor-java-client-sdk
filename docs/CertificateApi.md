@@ -1144,7 +1144,7 @@ public class Example {
 
 <a name="certificateRecoverCertificateAsync"></a>
 # **certificateRecoverCertificateAsync**
-> ModelsRecoveryResponse certificateRecoverCertificateAsync(xKeyfactorRequestedWith, rq, collectionId, xKeyfactorApiVersion)
+> ModelsRecoveryResponse certificateRecoverCertificateAsync(xCertificateformat, xKeyfactorRequestedWith, rq, collectionId, xKeyfactorApiVersion)
 
 Recovers the persisted certificate associated with the provided query
 
@@ -1171,12 +1171,13 @@ public class Example {
     basicAuth.setPassword("YOUR PASSWORD");
 
     CertificateApi apiInstance = new CertificateApi(defaultClient);
+    String xCertificateformat = "PEM"; // String | Desired format [PFX, PEM]
     String xKeyfactorRequestedWith = "APIClient"; // String | Type of the request [XMLHttpRequest, APIClient]
     ModelsCertificateRecoveryRequest rq = new ModelsCertificateRecoveryRequest(); // ModelsCertificateRecoveryRequest | Query to filter the certificate to be recovered
     Integer collectionId = 56; // Integer | Optional certificate collection identifier used to ensure user access to the certificate
     String xKeyfactorApiVersion = "1"; // String | Desired version of the api, if not provided defaults to v1
     try {
-      ModelsRecoveryResponse result = apiInstance.certificateRecoverCertificateAsync(xKeyfactorRequestedWith, rq, collectionId, xKeyfactorApiVersion);
+      ModelsRecoveryResponse result = apiInstance.certificateRecoverCertificateAsync(xCertificateformat, xKeyfactorRequestedWith, rq, collectionId, xKeyfactorApiVersion);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling CertificateApi#certificateRecoverCertificateAsync");
@@ -1193,6 +1194,7 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
+| **xCertificateformat** | **String**| Desired format [PFX, PEM] | [default to PEM] |
 | **xKeyfactorRequestedWith** | **String**| Type of the request [XMLHttpRequest, APIClient] | [default to APIClient] |
 | **rq** | [**ModelsCertificateRecoveryRequest**](ModelsCertificateRecoveryRequest.md)| Query to filter the certificate to be recovered | |
 | **collectionId** | **Integer**| Optional certificate collection identifier used to ensure user access to the certificate | [optional] |

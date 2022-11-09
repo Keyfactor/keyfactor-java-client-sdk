@@ -49,7 +49,7 @@ import com.keyfactor.command.client.JSON;
 /**
  * ModelsSSHServerGroupsServerGroupCreationRequest
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-11-08T11:48:36.483-07:00[America/Phoenix]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class ModelsSSHServerGroupsServerGroupCreationRequest {
   public static final String SERIALIZED_NAME_OWNER_NAME = "OwnerName";
   @SerializedName(SERIALIZED_NAME_OWNER_NAME)

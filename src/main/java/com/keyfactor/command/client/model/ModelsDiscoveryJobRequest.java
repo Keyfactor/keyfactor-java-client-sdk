@@ -51,7 +51,7 @@ import com.keyfactor.command.client.JSON;
 /**
  * ModelsDiscoveryJobRequest
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-11-08T11:48:36.483-07:00[America/Phoenix]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class ModelsDiscoveryJobRequest {
   public static final String SERIALIZED_NAME_CLIENT_MACHINE = "ClientMachine";
   @SerializedName(SERIALIZED_NAME_CLIENT_MACHINE)

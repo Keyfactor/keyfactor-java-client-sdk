@@ -49,7 +49,7 @@ import com.keyfactor.command.client.JSON;
  * The CustomReport can be used to create and update a custom report.
  */
 @ApiModel(description = "The CustomReport can be used to create and update a custom report.")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-11-08T11:48:36.483-07:00[America/Phoenix]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class ModelsCustomReportCreationRequest {
   public static final String SERIALIZED_NAME_CUSTOM_U_R_L = "CustomURL";
   @SerializedName(SERIALIZED_NAME_CUSTOM_U_R_L)

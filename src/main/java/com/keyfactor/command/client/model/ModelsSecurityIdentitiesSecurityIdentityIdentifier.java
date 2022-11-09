@@ -49,7 +49,7 @@ import com.keyfactor.command.client.JSON;
  * Model for looking up a security identity
  */
 @ApiModel(description = "Model for looking up a security identity")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-11-08T11:48:36.483-07:00[America/Phoenix]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class ModelsSecurityIdentitiesSecurityIdentityIdentifier {
   public static final String SERIALIZED_NAME_ACCOUNT_NAME = "AccountName";
   @SerializedName(SERIALIZED_NAME_ACCOUNT_NAME)

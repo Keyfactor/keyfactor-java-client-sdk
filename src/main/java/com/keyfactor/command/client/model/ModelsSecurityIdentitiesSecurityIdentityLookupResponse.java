@@ -49,7 +49,7 @@ import com.keyfactor.command.client.JSON;
  * A public DTO representing the result of a security identity lookup.
  */
 @ApiModel(description = "A public DTO representing the result of a security identity lookup.")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-11-08T11:48:36.483-07:00[America/Phoenix]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class ModelsSecurityIdentitiesSecurityIdentityLookupResponse {
   public static final String SERIALIZED_NAME_VALID = "Valid";
   @SerializedName(SERIALIZED_NAME_VALID)

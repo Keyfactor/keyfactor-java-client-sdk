@@ -2526,6 +2526,7 @@ public class CertificateApi {
     }
     /**
      * Build call for certificateRecoverCertificateAsync
+     * @param xCertificateformat Desired format [PFX, PEM] (required)
      * @param xKeyfactorRequestedWith Type of the request [XMLHttpRequest, APIClient] (required)
      * @param rq Query to filter the certificate to be recovered (required)
      * @param collectionId Optional certificate collection identifier used to ensure user access to the certificate (optional)
@@ -2539,7 +2540,7 @@ public class CertificateApi {
         <tr><td> 200 </td><td> OK </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call certificateRecoverCertificateAsyncCall(String xKeyfactorRequestedWith, ModelsCertificateRecoveryRequest rq, Integer collectionId, String xKeyfactorApiVersion, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call certificateRecoverCertificateAsyncCall(String xCertificateformat, String xKeyfactorRequestedWith, ModelsCertificateRecoveryRequest rq, Integer collectionId, String xKeyfactorApiVersion, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -2572,6 +2573,10 @@ public class CertificateApi {
             localVarHeaderParams.put("x-keyfactor-api-version", localVarApiClient.parameterToString(xKeyfactorApiVersion));
         }
 
+        if (xCertificateformat != null) {
+            localVarHeaderParams.put("x-certificateformat", localVarApiClient.parameterToString(xCertificateformat));
+        }
+
         if (xKeyfactorRequestedWith != null) {
             localVarHeaderParams.put("x-keyfactor-requested-with", localVarApiClient.parameterToString(xKeyfactorRequestedWith));
         }
@@ -2597,7 +2602,12 @@ public class CertificateApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call certificateRecoverCertificateAsyncValidateBeforeCall(String xKeyfactorRequestedWith, ModelsCertificateRecoveryRequest rq, Integer collectionId, String xKeyfactorApiVersion, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call certificateRecoverCertificateAsyncValidateBeforeCall(String xCertificateformat, String xKeyfactorRequestedWith, ModelsCertificateRecoveryRequest rq, Integer collectionId, String xKeyfactorApiVersion, final ApiCallback _callback) throws ApiException {
+        // verify the required parameter 'xCertificateformat' is set
+        if (xCertificateformat == null) {
+            throw new ApiException("Missing the required parameter 'xCertificateformat' when calling certificateRecoverCertificateAsync(Async)");
+        }
+
         // verify the required parameter 'xKeyfactorRequestedWith' is set
         if (xKeyfactorRequestedWith == null) {
             throw new ApiException("Missing the required parameter 'xKeyfactorRequestedWith' when calling certificateRecoverCertificateAsync(Async)");
@@ -2608,13 +2618,14 @@ public class CertificateApi {
             throw new ApiException("Missing the required parameter 'rq' when calling certificateRecoverCertificateAsync(Async)");
         }
 
-        return certificateRecoverCertificateAsyncCall(xKeyfactorRequestedWith, rq, collectionId, xKeyfactorApiVersion, _callback);
+        return certificateRecoverCertificateAsyncCall(xCertificateformat, xKeyfactorRequestedWith, rq, collectionId, xKeyfactorApiVersion, _callback);
 
     }
 
     /**
      * Recovers the persisted certificate associated with the provided query
      * *NOTE: At least one of the following criteria must be provided:  1. Certificate ID  2. Thumbprint  3. Serial number AND Issuer DN (because Serial Number is CA-specific and so is not unique enough on its own)
+     * @param xCertificateformat Desired format [PFX, PEM] (required)
      * @param xKeyfactorRequestedWith Type of the request [XMLHttpRequest, APIClient] (required)
      * @param rq Query to filter the certificate to be recovered (required)
      * @param collectionId Optional certificate collection identifier used to ensure user access to the certificate (optional)
@@ -2627,14 +2638,15 @@ public class CertificateApi {
         <tr><td> 200 </td><td> OK </td><td>  -  </td></tr>
      </table>
      */
-    public ModelsRecoveryResponse certificateRecoverCertificateAsync(String xKeyfactorRequestedWith, ModelsCertificateRecoveryRequest rq, Integer collectionId, String xKeyfactorApiVersion) throws ApiException {
-        ApiResponse<ModelsRecoveryResponse> localVarResp = certificateRecoverCertificateAsyncWithHttpInfo(xKeyfactorRequestedWith, rq, collectionId, xKeyfactorApiVersion);
+    public ModelsRecoveryResponse certificateRecoverCertificateAsync(String xCertificateformat, String xKeyfactorRequestedWith, ModelsCertificateRecoveryRequest rq, Integer collectionId, String xKeyfactorApiVersion) throws ApiException {
+        ApiResponse<ModelsRecoveryResponse> localVarResp = certificateRecoverCertificateAsyncWithHttpInfo(xCertificateformat, xKeyfactorRequestedWith, rq, collectionId, xKeyfactorApiVersion);
         return localVarResp.getData();
     }
 
     /**
      * Recovers the persisted certificate associated with the provided query
      * *NOTE: At least one of the following criteria must be provided:  1. Certificate ID  2. Thumbprint  3. Serial number AND Issuer DN (because Serial Number is CA-specific and so is not unique enough on its own)
+     * @param xCertificateformat Desired format [PFX, PEM] (required)
      * @param xKeyfactorRequestedWith Type of the request [XMLHttpRequest, APIClient] (required)
      * @param rq Query to filter the certificate to be recovered (required)
      * @param collectionId Optional certificate collection identifier used to ensure user access to the certificate (optional)
@@ -2647,8 +2659,8 @@ public class CertificateApi {
         <tr><td> 200 </td><td> OK </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<ModelsRecoveryResponse> certificateRecoverCertificateAsyncWithHttpInfo(String xKeyfactorRequestedWith, ModelsCertificateRecoveryRequest rq, Integer collectionId, String xKeyfactorApiVersion) throws ApiException {
-        okhttp3.Call localVarCall = certificateRecoverCertificateAsyncValidateBeforeCall(xKeyfactorRequestedWith, rq, collectionId, xKeyfactorApiVersion, null);
+    public ApiResponse<ModelsRecoveryResponse> certificateRecoverCertificateAsyncWithHttpInfo(String xCertificateformat, String xKeyfactorRequestedWith, ModelsCertificateRecoveryRequest rq, Integer collectionId, String xKeyfactorApiVersion) throws ApiException {
+        okhttp3.Call localVarCall = certificateRecoverCertificateAsyncValidateBeforeCall(xCertificateformat, xKeyfactorRequestedWith, rq, collectionId, xKeyfactorApiVersion, null);
         Type localVarReturnType = new TypeToken<ModelsRecoveryResponse>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
@@ -2656,6 +2668,7 @@ public class CertificateApi {
     /**
      * Recovers the persisted certificate associated with the provided query (asynchronously)
      * *NOTE: At least one of the following criteria must be provided:  1. Certificate ID  2. Thumbprint  3. Serial number AND Issuer DN (because Serial Number is CA-specific and so is not unique enough on its own)
+     * @param xCertificateformat Desired format [PFX, PEM] (required)
      * @param xKeyfactorRequestedWith Type of the request [XMLHttpRequest, APIClient] (required)
      * @param rq Query to filter the certificate to be recovered (required)
      * @param collectionId Optional certificate collection identifier used to ensure user access to the certificate (optional)
@@ -2669,9 +2682,9 @@ public class CertificateApi {
         <tr><td> 200 </td><td> OK </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call certificateRecoverCertificateAsyncAsync(String xKeyfactorRequestedWith, ModelsCertificateRecoveryRequest rq, Integer collectionId, String xKeyfactorApiVersion, final ApiCallback<ModelsRecoveryResponse> _callback) throws ApiException {
+    public okhttp3.Call certificateRecoverCertificateAsyncAsync(String xCertificateformat, String xKeyfactorRequestedWith, ModelsCertificateRecoveryRequest rq, Integer collectionId, String xKeyfactorApiVersion, final ApiCallback<ModelsRecoveryResponse> _callback) throws ApiException {
 
-        okhttp3.Call localVarCall = certificateRecoverCertificateAsyncValidateBeforeCall(xKeyfactorRequestedWith, rq, collectionId, xKeyfactorApiVersion, _callback);
+        okhttp3.Call localVarCall = certificateRecoverCertificateAsyncValidateBeforeCall(xCertificateformat, xKeyfactorRequestedWith, rq, collectionId, xKeyfactorApiVersion, _callback);
         Type localVarReturnType = new TypeToken<ModelsRecoveryResponse>(){}.getType();
         localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
         return localVarCall;

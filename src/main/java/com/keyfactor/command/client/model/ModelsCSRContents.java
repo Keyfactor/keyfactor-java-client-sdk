@@ -48,7 +48,7 @@ import com.keyfactor.command.client.JSON;
 /**
  * ModelsCSRContents
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-11-08T11:48:36.483-07:00[America/Phoenix]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class ModelsCSRContents {
   public static final String SERIALIZED_NAME_C_S_R = "CSR";
   @SerializedName(SERIALIZED_NAME_C_S_R)

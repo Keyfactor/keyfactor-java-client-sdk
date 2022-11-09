@@ -49,7 +49,7 @@ import com.keyfactor.command.client.JSON;
 /**
  * ModelsEnrollmentRenewalRequest
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-11-08T11:48:36.483-07:00[America/Phoenix]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class ModelsEnrollmentRenewalRequest {
   public static final String SERIALIZED_NAME_CERTIFICATE_ID = "CertificateId";
   @SerializedName(SERIALIZED_NAME_CERTIFICATE_ID)
