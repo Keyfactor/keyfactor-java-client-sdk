@@ -214,7 +214,7 @@ public class Scenarios {
 
         Map<String, String> metadata = new HashMap<>();
         metadata.put("Email-Contact", "johnny@appleseed.com");
-        String cn = "HaydenJavaTest1";
+        String cn = "JavaTest1";
         List<X509Certificate> certList = new ArrayList<>();
         // Enroll 10 certificates
         for (int i = 0; i < 10; i++) {

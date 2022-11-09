@@ -9,9 +9,9 @@
     <url>https://github.com/Keyfactor/keyfactor-java-client-sdk</url>
     <description>Keyfactor Command Java SDK</description>
     <scm>
-        <connection>scm:git:git@github.com:openapitools/openapi-generator.git</connection>
-        <developerConnection>scm:git:git@github.com:openapitools/openapi-generator.git</developerConnection>
-        <url>https://github.com/openapitools/openapi-generator</url>
+        <connection>scm:git:git@github.com:Keyfactor/keyfactor-java-client-sdk.git</connection>
+        <developerConnection>scm:git:git@github.com:Keyfactor/keyfactor-java-client-sdk.git</developerConnection>
+        <url>git@github.com:Keyfactor/keyfactor-java-client-sdk.git</url>
     </scm>
 
     <licenses>
