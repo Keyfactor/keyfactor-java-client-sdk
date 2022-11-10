@@ -27,3 +27,4 @@ test
 Keyfactor-v10-patched.swagger.yaml
 .openapi-generator
 .openapi-generator-ignore
+git_push.sh
